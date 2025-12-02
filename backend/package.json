@@ -4,7 +4,7 @@
   "description": "a simple node js backend server built apis using expressjs\"",
   "repository": {
     "type": "git",
-    "url": "ttps://github.com/369koushil/olcademy_assignment"
+    "url": "https://github.com/369koushil/olcademy_assignment"
   },
   "license": "ISC",
   "author": "koushil",
