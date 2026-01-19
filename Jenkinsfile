@@ -7,8 +7,8 @@ pipeline {
 
         stage('Build Docker Images') {
             steps {
-                buildDockerImages("boolean99", "frontend")
-                buildDockerImages("boolean99", "backend")
+                buildDockerImages("boolean99", "frontend","frontend")
+                buildDockerImages("boolean99", "backend","backend")
             }
         }
 
