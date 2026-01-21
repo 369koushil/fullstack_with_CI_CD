@@ -1,10 +1,9 @@
 @Library('shared_lib_jenkins') _
 
 pipeline {
-    agent { label 'n1' }
+    agent any
 
     stages {
-
         stage('Build Docker Images') {
             steps {
                 buildDockerImages("boolean99", "frontend","frontend")
@@ -22,8 +21,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh 'docker compose pull'
-                sh 'docker compose up -d'
+                sh 'docker compose up -build -d'
             }
         }
     }
