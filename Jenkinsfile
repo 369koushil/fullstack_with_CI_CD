@@ -1,7 +1,7 @@
 @Library('shared_lib_jenkins') _
 
 pipeline {
-    agent any
+    agent {label n1}
 
     stages {
         stage('Build Docker Images') {
