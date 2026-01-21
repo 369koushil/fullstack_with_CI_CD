@@ -6,7 +6,7 @@ const seedDB=require('./seed')
 const Product = require('./models/Product');
 
 const app = express();
-const MONGO_URI = process.env.MONGOURI;
+const MONGO_URI = process.env.MONGO_URI;
 const PORT = process.env.PORT || 5000;
 
 // Middleware
