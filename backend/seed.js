@@ -1,4 +1,6 @@
-export const seedData = async () => {
+ const Product = require('./models/Product');
+
+ const seedData = async () => {
   try {
     await Product.deleteMany({}); 
 
@@ -61,4 +63,6 @@ export const seedData = async () => {
     console.error("Error seeding data:", error);
   }
 };
+
+module.exports=seedData
 
